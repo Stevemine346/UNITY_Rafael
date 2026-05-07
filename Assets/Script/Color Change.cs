@@ -88,8 +88,13 @@ public class ColorChange : MonoBehaviour
         {
             if (isInvisible == false)
             {
-                print("you lose MotherFucker");
+                GameManager.Instance.GameOver();
             }
+        }
+
+        if (other.TryGetComponent<Win>(out Win win))
+        {
+            GameManager.Instance.YouWin();
         }
     }
 }

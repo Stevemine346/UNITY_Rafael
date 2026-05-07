@@ -43,7 +43,7 @@ public class PlayerMovement : MonoBehaviour
 
         if (isGrounded == true)
         {
-            veticalVelocity = 2f;
+            veticalVelocity = -2f;
         }
 
         if (isGrounded == true && Keyboard.current.spaceKey.wasPressedThisFrame)
